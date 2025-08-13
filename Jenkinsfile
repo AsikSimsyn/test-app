@@ -12,10 +12,11 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-               git branch: 'main',
+                git branch: 'main',
                     url: 'https://github.com/AsikSimsyn/test-app.git',
                     credentialsId: 'github-token'
 
+            }
         }
 
         stage('Install Dependencies') {
